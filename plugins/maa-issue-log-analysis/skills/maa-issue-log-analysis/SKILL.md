@@ -9,7 +9,7 @@ description: 分析 MaaAssistantArknights 上游仓库公开 Issue（`https://gi
 
 - 开始分析前，先读取同目录的 `KNOWLEDGE.md`，先用其中的通用误判规则校正自己的分析路径，再读 issue 和日志。
 - 如果 issue 涉及会客室、线索、快捷按钮、批量按钮、自动领取/赠送/放置这类“会先改变界面状态再继续执行”的流程，必须先套用 `KNOWLEDGE.md` 中的 `Stateful UI Automation Checks` 与 `Reception Clue Analysis`。
-- 如果用户没有贴出日志、报告包、报错文本、截图或导出诊断等有效证据，不要进入严肃分析；直接使用本文件 `Output Format` 中的“赛博算一卦”短回复引导用户补证据（详见 Scope 和 Workflow Step 2）。
+- 如果用户没有贴出日志、报告包、报错文本、截图或导出诊断等有效证据，不要进入严肃分析；改用 `maa-cyber-fortune-master/SKILL.md` 引导补证据（详见 Scope 和 Workflow Step 2）。
 - 本 skill 内置「诉求评估」方法论（Workflow Step 9 的三道筛：合理性 / 必要性 / 优先级）。即使没有日志、报告包、截图——例如面对 B 站评论、群聊反馈、纯文字 feature request——只要用户提出了明确的诉求，就可以单独引用这套框架做判断，不需要走完整 Workflow 或输出模板。
 
 ## Scope
@@ -19,7 +19,7 @@ description: 分析 MaaAssistantArknights 上游仓库公开 Issue（`https://gi
 - 只分析公开 issue 中可直接访问的附件。
 - 如果没有可下载的 `report_*.zip`，看用户是否提供了其他有效证据（报错文本、截图、导出诊断、清晰复现步骤）。
     - 有其他证据 → 基于现有证据给出初步判断，明确说明证据不足。
-    - 无其他证据 → 使用本 skill 内置的“赛博算一卦”短回复，不要输出严肃分析模板。
+    - 无其他证据 → 转用 `maa-cyber-fortune-master/SKILL.md`，不要输出严肃分析模板。
 - 如果评论里有机器人提示“日志没有上传成功”，不要直接放弃；正文里的附件链接仍可能可下载。
 
 ## Workflow
@@ -32,7 +32,7 @@ description: 分析 MaaAssistantArknights 上游仓库公开 Issue（`https://gi
 2. 先判断证据是否足够。
 
  - 如果用户只给一句模糊现象，且没有日志、报告包、截图、报错文本、导出诊断或清晰复现步骤，不进入本 skill 的严肃分析流程。
- - 此时使用本 skill 内置的“赛博算一卦”短回复，先用短小玄学回复活跃气氛，再把对话引导到补充日志、截图、报错或诊断信息。
+ - 此时改用 `maa-cyber-fortune-master/SKILL.md`，先用短小玄学回复活跃气氛，再把对话引导到补充日志、截图、报错或诊断信息。
  - 只有在用户已经提供可分析证据时，才继续下面的 issue / 日志分析步骤。
 
 3. 获取 issue 内容。
