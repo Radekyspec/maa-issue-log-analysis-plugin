@@ -1,0 +1,22 @@
+{
+  "name": "maa-issue-log-analysis",
+  "version": "1.0.0",
+  "description": "分析 MaaAssistantArknights 公开 Issue、日志包、配置、截图和相关源码，定位问题根因并评估用户诉求。",
+  "author": {
+    "name": "Fan Peng"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "MAA Issue Log Analysis",
+    "shortDescription": "分析 MAA Issue、日志与现场证据。",
+    "longDescription": "读取 MaaAssistantArknights 公开 Issue 及 report 日志包，结合 GUI/Core 日志、配置、资源任务、截图与当前源码建立证据链，判断根因、用户可行操作、修复方向和诉求优先级。",
+    "developerName": "Fan Peng",
+    "category": "Productivity",
+    "capabilities": ["Interactive"],
+    "defaultPrompt": [
+      "分析这个 MAA issue 和它的日志附件。",
+      "判断这份 MAA 日志中的失败根因。",
+      "评估这个 MAA 用户诉求是否值得实现。"
+    ]
+  }
+}
