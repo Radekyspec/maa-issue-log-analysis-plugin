@@ -1,0 +1,20 @@
+{
+  "name": "maa-shared",
+  "interface": {
+    "displayName": "Maa Shared"
+  },
+  "plugins": [
+    {
+      "name": "maa-issue-log-analysis",
+      "source": {
+        "source": "local",
+        "path": "./plugins/maa-issue-log-analysis"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
